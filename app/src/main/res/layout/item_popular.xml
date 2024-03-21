@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginEnd="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="2dp"
+    app:contentPadding="@dimen/_10sdp">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_130sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:src="@drawable/logo"
+                android:scaleType="centerInside"
+                android:background="@drawable/custom_bg_image"
+                android:id="@+id/img_product"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart_outlined_icon"
+                android:background="@drawable/custom_btn_circle"
+                android:padding="5dp"
+                android:layout_margin="@dimen/_7sdp"
+                android:layout_alignParentEnd="true"
+                app:tint="@color/primary" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apple"
+            android:fontFamily="monospace"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/tv_name_product"
+            android:textSize="@dimen/_14sdp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apple silicon "
+            android:id="@+id/tv_des_product"
+            android:fontFamily="monospace"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/secondary"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custom_btn_circle_primary"
+                android:src="@drawable/cart_icon"
+                android:id="@+id/button_cart"
+                android:padding="@dimen/_8sdp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 60$"
+                android:fontFamily="monospace"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/tv_price_product"
+                android:textSize="@dimen/_14sdp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
